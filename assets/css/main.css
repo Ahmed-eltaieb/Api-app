@@ -1,0 +1,250 @@
+ :root {
+   --light-green:#55efc4;
+   --dark-green:#00b894;
+   --light-blue:#74b9ff;
+   --dark-blue:#0984e3;
+   --light-orange:#ff7675;
+   --dark-orange:#d63031;
+   --light-move:#a29bfe;
+   --dark-move:#6c5ce7;
+   --shadow:#b2bec3;
+   --main:#dfe6e9;
+
+
+}
+
+/* start main styles */
+
+ * {
+     list-style: none;
+     text-decoration: none;
+     outline: none;
+     padding: 0;
+     font-size: inherit;
+     color: inherit;
+     /* box-sizing: border-box; */
+ }
+
+ /*end main styles*/
+
+ 
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+    }
+    
+/*start header styles*/
+
+.app__header {
+   border-top: 2px solid var(--light-move);
+   border-bottom: 2px solid var(--light-move);
+    border-radius: 15px;
+    padding: 3px;
+    margin: 25px 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-size:1.5rem;
+}
+
+.nav a {
+    padding: 1rem;
+    margin-top: 20px;
+    background-color: var(--dark-move);
+    color: var(--main);
+    border-radius: 15px;
+}
+
+/*end header styles */
+
+/*start persons section style */
+.app__persons {
+    border-top: 2px solid var(--dark-orange);
+    border-bottom: 2px solid var(--dark-orange);
+    border-radius: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+
+.app__persons h2 {
+    font-size: 1.5rem;
+   color: var(--dark-orange);
+
+}
+
+.app__persons input {
+    height: 40px;
+    padding: 7px;
+    border-radius: 15px;
+    border: 2px solid var(--light-orange);
+
+}
+
+.persons--card {
+    box-shadow: 0px 0px 5px var(--dark-orange);
+
+}
+.persons--card .static-data {
+    color: var(--dark-green);
+    font-weight: 700;
+}
+.persons--card .variable-data {
+    color: var(--dark-orange);
+    margin-left: 2px;
+}
+.persons--card button {
+    border: 0;
+    color: var(--main);
+    padding: 5px;
+    background-color: var(--dark-orange);
+ margin: 7px;
+}
+
+/*end persons section style */
+
+
+/*start companies section style */
+.app__companies {
+    border-top: 2px solid var(--dark-blue);
+    border-bottom: 2px solid var(--light-blue);
+    border-radius: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+
+
+}
+
+.app__companies h2 {
+    font-size: 1.5rem;
+   color: var(--dark-blue);
+
+}
+
+.companies--card {
+    box-shadow: 0px 0px 5px var(--light-blue);
+
+}
+
+.companies--card .static-data {
+    color: var(--dark-move);
+    font-weight: 700;
+}
+.companies--card .variable-data {
+    color: var(--dark-blue);
+    margin-left: 2px;
+}
+.companies--card button {
+    border: 0;
+    color: var(--main);
+    padding: 5px;
+    background-color: var(--dark-green);
+ margin: 7px;
+}
+
+
+/*end companies section style */
+
+
+/*start books section style */
+.app__books {
+    border-top: 2px solid var(--dark-green);
+    border-bottom: 2px solid var(--light-green);
+    border-radius: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+
+
+}
+
+.app__books h2 {
+    font-size: 1.5rem;
+   color: var(--dark-green);
+
+}
+
+.books--card {
+    box-shadow: 0px 0px 5px var(--light-green);
+
+}
+
+.books--card .static-data {
+    color: var(--dark-orange);
+    font-weight: 700;
+}
+.books--card .variable-data {
+    color: var(--dark-green);
+    margin-left: 2px;
+}
+
+
+/*end books section style */
+
+
+/*cards container style */
+.app__persons--cards,
+.app__books--cards,
+.app__companies--cards {
+   display: flex; 
+   flex-wrap: wrap;
+   
+}
+
+/*cards  style */
+
+.persons--card, 
+.books--card, 
+.companies--card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.card--img {
+    max-width: 280px;
+    max-height: 280px;
+}
+
+.card--img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+/*loader style */
+
+.hidden {
+   display: none;
+}
+
+.persons--loader,
+.companies--loader,
+.books--loader {
+    text-align: center;
+}
+
+/*media query */
+
+
+
+@media  (max-width: 381px) {
+
+.nav {
+    flex-direction: column;
+}
+
+.nav li {
+    margin: 3px;
+    
+}
+.nav a {
+    padding: 7px;
+   display: block;
+   text-align: center;
+}
+}
