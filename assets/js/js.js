@@ -23,6 +23,10 @@ function getPersons() {
     });
 }
 
+function preventDefault(e){
+  e.preventDefault();
+}
+
 function searchPersons(searchInput) {
   let searchText = searchInput.value.toLowerCase();
   let filteredPersons = pesrsonsArray.filter((person) => {

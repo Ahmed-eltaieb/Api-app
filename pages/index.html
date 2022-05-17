@@ -24,7 +24,7 @@
     <main class="app">
         <section id="persons" class="app__persons">
             <h2>persons</h2>
-            <form >
+            <form onsubmit="preventDefault(event)">
                 <input type="search" placeholder="search" oninput="searchPersons(this)">
             </form>
             <div class="persons--loader hidden">
