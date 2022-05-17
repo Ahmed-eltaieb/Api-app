@@ -23,7 +23,7 @@ function getPersons() {
     });
 }
 
-function preventDefault(e){
+function preventDefault(e) {
   e.preventDefault();
 }
 
