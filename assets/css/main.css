@@ -25,6 +25,10 @@
      /* box-sizing: border-box; */
  }
 
+ body{
+     background-color: #000;
+ }
+
  /*end main styles*/
 
  
@@ -39,8 +43,9 @@
    border-top: 2px solid var(--light-move);
    border-bottom: 2px solid var(--light-move);
     border-radius: 15px;
-    padding: 3px;
+    padding: 7px;
     margin: 25px 0px;
+    background-color: var(--dark-blue);
 }
 
 .nav {
@@ -58,8 +63,15 @@
 }
 
 /*end header styles */
+.app__persons,
+.app__companies,
+.app__books{
+    background-color: #fff;
+    padding-inline: 7px;
+}
 
 /*start persons section style */
+
 .app__persons {
     border-top: 2px solid var(--dark-orange);
     border-bottom: 2px solid var(--dark-orange);
@@ -70,16 +82,22 @@
 
 
 .app__persons h2 {
-    font-size: 1.5rem;
-   color: var(--dark-orange);
+    color: var(--dark-orange);
+    font-size: 1.7rem;
+   text-align: center;
 
 }
 
+.app__persons form {
+
+text-align: center;
+}
 .app__persons input {
     height: 40px;
     padding: 7px;
     border-radius: 15px;
     border: 2px solid var(--light-orange);
+    text-align: center;
 
 }
 
@@ -118,7 +136,8 @@
 }
 
 .app__companies h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    text-align: center;
    color: var(--dark-blue);
 
 }
@@ -160,7 +179,8 @@
 }
 
 .app__books h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    text-align: center;
    color: var(--dark-green);
 
 }
@@ -189,6 +209,7 @@
 .app__companies--cards {
    display: flex; 
    flex-wrap: wrap;
+   justify-content: space-around;
    
 }
 
@@ -199,7 +220,7 @@
 .companies--card {
     display: flex;
     flex-direction: column;
-    margin: 20px 10px;
+    margin: 20px 0px 20px 0px;
     border-radius: 15px;
     padding: 10px;
 }
@@ -212,6 +233,7 @@
 .card--img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 50%;
 
 }
